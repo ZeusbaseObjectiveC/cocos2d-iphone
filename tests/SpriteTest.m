@@ -74,6 +74,7 @@ static NSString *transitions[] = {
 	@"SpriteBatchBug1217",
 	@"AnimationCache",
 	@"AnimationCacheFile",
+    @"Sprite9Slice",
 };
 
 enum {
@@ -4567,6 +4568,56 @@ Class restartAction()
 }
 @end
 
+#pragma mark - Example Sprite9Slice
+
+@implementation Sprite9Slice {
+    CCSprite9Slice*     _sprite;
+    NSTimeInterval      _ellapsed;
+}
+
+-( id )init {
+    self = [ super init ];
+    
+    _sprite = [ CCSprite9Slice spriteWithFile:@"button.png" ];
+    
+    _sprite.position = ccp( [ CCDirector sharedDirector ].winSize.width / 2, [ CCDirector sharedDirector ].winSize.height / 2 );
+    
+    _sprite.marginLeft = _sprite.marginRight = 0.10f;
+    _sprite.marginTop = _sprite.marginBottom = 0.15f;
+    
+    [ self addChild:_sprite ];
+    
+    [ self scheduleUpdate ];
+    
+    return( self );
+}
+
+-( void )dealloc {
+    [ self unscheduleUpdate ];
+    [ super dealloc ];
+}
+
+-( void )update:(ccTime)delta {
+    _ellapsed += delta;
+   
+    _sprite.scaleX = 2 + sinf( _ellapsed );
+    _sprite.scaleY = 2 + sinf( _ellapsed * 1.33 );
+}
+
+-( NSString* )title {
+    return( @"Sprite 9 slice" );
+}
+
+-( NSString* )subtitle {
+    return( @"" );
+}
+
+@end
+
+
+
+
+
 #pragma mark -
 #pragma mark SpriteNilTexture
 
@@ -4807,7 +4858,6 @@ Class restartAction()
 	return @"Retina Display. SD (left) should be equal to HD (right)";
 }
 @end
-
 
 #pragma mark -
 #pragma mark AnimationCache

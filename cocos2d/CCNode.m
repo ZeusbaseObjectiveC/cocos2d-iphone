@@ -498,32 +498,10 @@ static NSUInteger globalOrderOfArrival = 1;
 {
 	if (_isReorderChildDirty)
 	{
-#warning This may need to be done more efficiently (old solution not too good but saved for reference)
         [_children sortUsingDescriptors:[NSArray arrayWithObjects:
                                          [NSSortDescriptor sortDescriptorWithKey:@"zOrder" ascending:YES],
                                          [NSSortDescriptor sortDescriptorWithKey:@"orderOfArrival" ascending:YES],
                                          NULL]];
-        
-        /*
-		NSInteger i,j,length = _children->data->num;
-		CCNode ** x = _children->data->arr;
-		CCNode *tempItem;
-
-		// insertion sort
-		for(i=1; i<length; i++)
-		{
-			tempItem = x[i];
-			j = i-1;
-
-			//continue moving element downwards while zOrder is smaller or when zOrder is the same but mutatedIndex is smaller
-			while(j>=0 && ( tempItem.zOrder < x[j].zOrder || ( tempItem.zOrder== x[j].zOrder && tempItem.orderOfArrival < x[j].orderOfArrival ) ) )
-			{
-				x[j+1] = x[j];
-				j = j-1;
-			}
-			x[j+1] = tempItem;
-		}
-         */
 
 		//don't need to check children recursively, that's done in visit of each child
 

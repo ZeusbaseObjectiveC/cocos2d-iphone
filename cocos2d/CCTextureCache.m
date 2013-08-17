@@ -388,7 +388,7 @@ static CCTextureCache *sharedTextureCache;
 			}
 		}
 	});
-     */
+    */
 }
 
 -(void) removeTexture: (CCTexture2D*) tex

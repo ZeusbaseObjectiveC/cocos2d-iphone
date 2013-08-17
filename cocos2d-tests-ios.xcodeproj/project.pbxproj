@@ -1835,6 +1835,7 @@
 		A0F841F6151D5E4700EBBFCB /* font-issue1343-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F841F2151D5E4600EBBFCB /* font-issue1343-hd.png */; };
 		A0F841F7151D5E4700EBBFCB /* font-issue1343.fnt in Resources */ = {isa = PBXBuildFile; fileRef = A0F841F3151D5E4600EBBFCB /* font-issue1343.fnt */; };
 		A0F841F8151D5E4700EBBFCB /* font-issue1343.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F841F4151D5E4600EBBFCB /* font-issue1343.png */; };
+		A6CF065B17BFB9790086FC8D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CF065717BFB76F0086FC8D /* button.png */; };
 		DA5F0EC50FFE96D400C7C82E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B2CB240E10EE4A00AE9530 /* Default.png */; };
 		DA5F0EC60FFE96D400C7C82E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B2CB250E10EE4A00AE9530 /* Icon.png */; };
 		DA5F0EC70FFE96D400C7C82E /* grossini.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B2CB280E10EE4A00AE9530 /* grossini.png */; };
@@ -3641,6 +3642,7 @@
 		A0F841F2151D5E4600EBBFCB /* font-issue1343-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "font-issue1343-hd.png"; sourceTree = "<group>"; };
 		A0F841F3151D5E4600EBBFCB /* font-issue1343.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "font-issue1343.fnt"; sourceTree = "<group>"; };
 		A0F841F4151D5E4600EBBFCB /* font-issue1343.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "font-issue1343.png"; sourceTree = "<group>"; };
+		A6CF065717BFB76F0086FC8D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		AAEA834A0FD5704400F08728 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blocks.png; sourceTree = "<group>"; };
 		DA90D87B1059A54D0039F26A /* FontTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FontTest.h; path = tests/FontTest.h; sourceTree = "<group>"; };
 		DA90D87C1059A54D0039F26A /* FontTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FontTest.m; path = tests/FontTest.m; sourceTree = "<group>"; };
@@ -4968,6 +4970,7 @@
 				508A333A0FBADD6A00D574A2 /* grossini images */,
 				508A333D0FBADE2D00D574A2 /* menu related images */,
 				508A333C0FBADDA700D574A2 /* particles images */,
+				A6CF065717BFB76F0086FC8D /* button.png */,
 				A0D77A16146E3268000960C7 /* arrows-hd.png */,
 				A0D77A17146E3268000960C7 /* arrows.png */,
 				A0D77A18146E3268000960C7 /* arrowsBar-hd.png */,
@@ -6582,6 +6585,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6CF065B17BFB9790086FC8D /* button.png in Resources */,
 				501C7C710F91EFFF0024A296 /* b1.png in Resources */,
 				501C7C720F91EFFF0024A296 /* b2.png in Resources */,
 				501C7C730F91EFFF0024A296 /* f1.png in Resources */,

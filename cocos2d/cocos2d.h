@@ -67,6 +67,7 @@
 #import "CCAnimationCache.h"
 #import "CCSprite.h"
 #import "CCSpriteFrame.h"
+#import "CCSprite9Slice.h"
 #import "CCSpriteBatchNode.h"
 #import "CCSpriteFrameCache.h"
 
